@@ -45,17 +45,17 @@ public class Problem10 {
 		System.out.println("List of Deque : " + DQ1);
 		System.out.println("Array of operations : " + L1);
 		
-		Deque<String> D_dup = new LinkedList<>(DQ1);
+		Deque<String> result = new LinkedList<>(DQ1);
 		Stack<String> stack = new Stack<>();
 		
 		for(int e : L1) {
 			switch(e) {
-			 	case 1: if(!D_dup.isEmpty()) {
-			 		stack.add(D_dup.pollFirst());
+			 	case 1: if(!result.isEmpty()) {
+			 		stack.add(result.pollFirst());
 			 		break;
 			 	}
 			 	case 0: if(!stack.isEmpty()) {
-			 		D_dup.addFirst(stack.pop());
+			 		result.addFirst(stack.pop());
 			 		break;
 			 	}
 			}
@@ -63,7 +63,7 @@ public class Problem10 {
 		
 
 		
-		Iterator<String> objIterator = D_dup.iterator();  
+		Iterator<String> objIterator = result.iterator();  
 		while(objIterator.hasNext())
 		{
 			System.out.print(objIterator.next());
