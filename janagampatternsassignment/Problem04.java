@@ -29,9 +29,6 @@ public class Problem04 {
 		System.out.println("List of Strings : " + L1);
 		
 		List<String> Result = new ArrayList<>(L1);
-		
-
-
 		sortStringListByLength(Result);	
 		System.out.println("Sorted List of String A1_dup: " +Result);
 		
