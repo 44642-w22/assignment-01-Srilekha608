@@ -40,12 +40,6 @@ public class Problem09 {
 					odd_queue.add(e);				
 				}
 		}
-		
-		
-
-
-
-
 		System.out.println("List of Queue : " + Q1);		
 		System.out.println("List of Queue with odd index elements : " + odd_queue);
 		System.out.println("List of Queue with even index elements : " + even_queue);
